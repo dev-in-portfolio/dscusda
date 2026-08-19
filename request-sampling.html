@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Request Sampling | DSC USDA</title>
+  <meta name="description" content="Submit a formal hemp sampling service request for your farm or commercial production facility.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+<body>
+
+  <header class="usda-header">
+    <a href="/" class="brand-mark">
+      <span class="brand-badge">DSC</span>
+      <span class="brand-title">USDA SAMPLING DIVISION</span>
+    </a>
+    <nav class="usda-nav">
+      <a href="/" class="nav-link">Home</a>
+      <a href="/services.html" class="nav-link">Sampling Services</a>
+      <a href="/how-it-works.html" class="nav-link">How It Works</a>
+      <a href="/prepare.html" class="nav-link">Prepare For Sampling</a>
+      <a href="/credentials.html" class="nav-link">Credentials</a>
+      <a href="/coverage.html" class="nav-link">Coverage</a>
+      <a href="/contact.html" class="nav-link">Contact</a>
+    </nav>
+    <a href="/request-sampling.html" class="cta-button">Request Sampling</a>
+  </header>
+
+  <main style="padding-top: 8rem;">
+    <section class="section-wrapper">
+      <div class="section-header">
+        <span class="hero-tag">FIELD SERVICE INTAKE</span>
+        <h1 class="section-title">Request Sampling Appointment</h1>
+      </div>
+
+      <div class="disclaimer-banner">
+        <strong>IMPORTANT NOTICE:</strong> Submitting this service request initiates administrative review and scheduling availability checks. <strong>It does NOT guarantee date availability or constitute appointment confirmation.</strong> Official appointment confirmation will be issued after producer license verification.
+      </div>
+
+      <div id="request-status-output" style="display: none;"></div>
+
+      <div class="form-container">
+        <form id="sampling-request-form">
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="producer_name">Producer / Business Name *</label>
+              <input type="text" id="producer_name" name="producer_name" class="form-input" required placeholder="e.g. Apex Botanical Farms LLC">
+            </div>
+            <div class="form-group">
+              <label for="contact_name">Contact Person *</label>
+              <input type="text" id="contact_name" name="contact_name" class="form-input" required placeholder="e.g. Marcus Vance">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" class="form-input" required placeholder="marcus@apexbotanicals.com">
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number *</label>
+              <input type="tel" id="phone" name="phone" class="form-input" required placeholder="+1 (555) 392-1049">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="farm_location">Farm / Facility Location (Address or GPS) *</label>
+              <input type="text" id="farm_location" name="farm_location" class="form-input" required placeholder="1420 Harvest Ridge Road, Site B">
+            </div>
+            <div class="form-group">
+              <label for="jurisdiction">Jurisdiction / State *</label>
+              <input type="text" id="jurisdiction" name="jurisdiction" class="form-input" required placeholder="e.g. Virginia / USDA Federal Program">
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="requested_date">Requested Sampling Date *</label>
+              <input type="date" id="requested_date" name="requested_date" class="form-input" required>
+            </div>
+            <div class="form-group">
+              <label for="estimated_harvest_date">Estimated Harvest Date *</label>
+              <input type="date" id="estimated_harvest_date" name="estimated_harvest_date" class="form-input" required>
+            </div>
+          </div>
+
+          <div class="form-grid-2">
+            <div class="form-group">
+              <label for="number_of_lots">Number of Lots to Sample *</label>
+              <input type="number" id="number_of_lots" name="number_of_lots" class="form-input" min="1" max="50" required value="1">
+            </div>
+            <div class="form-group">
+              <label for="selected_lab">Target Testing Laboratory (if selected)</label>
+              <input type="text" id="selected_lab" name="selected_lab" class="form-input" placeholder="e.g. Eurofins / Botanacor / DEA-registered Lab">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="lot_info">Lot & Crop Details (Strain names, Lot IDs, Acreage/SqFt)</label>
+            <textarea id="lot_info" name="lot_info" rows="3" class="form-textarea" placeholder="e.g. Lot A: Cherry Wine (2.5 Acres), Lot B: BaOx (Greenhouse Bay 4)"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Special Access / Facility Notes</label>
+            <textarea id="notes" name="notes" rows="2" class="form-textarea" placeholder="Gate codes, biosecurity protocols, preferred arrival time window"></textarea>
+          </div>
+
+          <button type="submit" class="cta-button" style="width:100%; justify-content:center; padding:1rem;">Submit Formal Sampling Request</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="usda-footer">
+    <div class="footer-content">
+      <a href="https://dscuniverse.netlify.app" class="universe-gateway">
+        <span style="font-size:1.5rem; color:var(--accent-emerald);">🌌</span>
+        <div>
+          <h4 style="font-family:var(--font-heading); color:#fff;">DARK STAR UNIVERSE</h4>
+          <p style="font-size:0.85rem; color:var(--text-muted);">Return to the Central Ecosystem Hub</p>
+        </div>
+      </a>
+      <p style="font-size:0.85rem; color:var(--text-dim);">
+        © 2026 DSC USDA. Independent Sampling Division within the Dark Star Ecosystem.
+      </p>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>

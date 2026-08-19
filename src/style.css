@@ -1,0 +1,339 @@
+/* DSC USDA — HIGH TRUST FIELD & SAMPLING VISUAL SYSTEM */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0e17;
+  --bg-secondary: #121824;
+  --bg-card: rgba(18, 24, 36, 0.85);
+  --accent-emerald: #2acc74;
+  --accent-emerald-glow: rgba(42, 204, 116, 0.2);
+  --accent-gold: #d4af37;
+  --accent-blue: #3b82f6;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-dim: #64748b;
+  --border-muted: rgba(255, 255, 255, 0.1);
+  --border-emerald: rgba(42, 204, 116, 0.3);
+  --font-heading: 'Space Grotesk', sans-serif;
+  --font-sans: 'Inter', sans-serif;
+  --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-primary);
+  color: var(--text-main);
+  font-family: var(--font-sans);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+body {
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Header */
+.usda-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  padding: 1.25rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(10, 14, 23, 0.95);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-muted);
+}
+
+.brand-mark {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  color: var(--text-main);
+}
+
+.brand-badge {
+  background: rgba(42, 204, 116, 0.15);
+  border: 1px solid var(--accent-emerald);
+  color: var(--accent-emerald);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 3px;
+  letter-spacing: 0.05em;
+}
+
+.brand-title {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.usda-nav {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.nav-link:hover, .nav-link.active {
+  color: var(--accent-emerald);
+}
+
+.cta-button {
+  background: var(--accent-emerald);
+  color: #0a0e17;
+  padding: 0.6rem 1.4rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.cta-button:hover {
+  background: #34d399;
+  box-shadow: 0 0 20px var(--accent-emerald-glow);
+}
+
+/* Notice & Disclaimer Banner */
+.disclaimer-banner {
+  background: rgba(59, 130, 246, 0.1);
+  border-left: 4px solid var(--accent-blue);
+  padding: 1rem 1.5rem;
+  margin: 1.5rem 0;
+  border-radius: 2px;
+  font-size: 0.88rem;
+  color: #cbd5e1;
+}
+
+/* Hero Section */
+.hero-section {
+  padding: 10rem 2rem 5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.hero-tag {
+  color: var(--accent-emerald);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.hero-title {
+  font-family: var(--font-heading);
+  font-size: clamp(2.4rem, 5vw, 4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.hero-description {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  max-width: 750px;
+  margin: 0 auto 2.5rem;
+  line-height: 1.8;
+}
+
+/* Grid Layouts */
+.section-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 5rem 2rem;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  color: #ffffff;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-muted);
+  border-radius: 6px;
+  padding: 2rem;
+  transition: var(--transition);
+}
+
+.card:hover {
+  border-color: var(--border-emerald);
+  transform: translateY(-4px);
+}
+
+.card-icon {
+  color: var(--accent-emerald);
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #ffffff;
+}
+
+.card-text {
+  color: var(--text-muted);
+  font-size: 0.92rem;
+  line-height: 1.7;
+}
+
+/* Workflow Step Diagram */
+.workflow-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.workflow-node {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-muted);
+  border-radius: 4px;
+  padding: 1.8rem;
+  position: relative;
+}
+
+.node-number {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-emerald);
+  margin-bottom: 0.5rem;
+}
+
+/* Form Controls */
+.form-container {
+  background: var(--bg-card);
+  border: 1px solid var(--border-muted);
+  border-radius: 6px;
+  padding: 2.5rem;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-emerald);
+  margin-bottom: 0.5rem;
+}
+
+.form-input, .form-select, .form-textarea {
+  width: 100%;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-muted);
+  color: var(--text-main);
+  padding: 0.85rem 1.1rem;
+  border-radius: 3px;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
+  transition: var(--transition);
+}
+
+.form-input:focus, .form-select:focus, .form-textarea:focus {
+  outline: none;
+  border-color: var(--accent-emerald);
+  box-shadow: 0 0 12px var(--accent-emerald-glow);
+}
+
+.form-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+/* Footer & Gateway */
+.usda-footer {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border-muted);
+  padding: 4rem 2rem 2rem;
+  margin-top: 6rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  text-align: center;
+}
+
+.universe-gateway {
+  background: rgba(42, 204, 116, 0.08);
+  border: 1px dashed var(--accent-emerald);
+  padding: 1.25rem 2.25rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  text-decoration: none;
+  color: var(--text-main);
+  transition: var(--transition);
+}
+
+.universe-gateway:hover {
+  background: rgba(42, 204, 116, 0.16);
+  border-style: solid;
+}
+
+@media (max-width: 768px) {
+  .form-grid-2 { grid-template-columns: 1fr; }
+  .usda-header { padding: 1rem 1.5rem; }
+  .usda-nav { display: none; }
+}
