@@ -3,73 +3,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Prepare For Sampling | DSC USDA</title>
-  <meta name="description" content="Client checklist and field preparation guidelines for upcoming hemp sampling appointments.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <title>Pre-Sampling Producer Checklist | Dark Star Consulting Group</title>
+  <meta name="description" content="Preparation guidelines and pre-sampling checklist for hemp producers scheduling an official USDA compliance sampling visit.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a0d14' stroke='%2310b981' stroke-width='6'/><path d='M50 25 L70 75 L30 75 Z' fill='%2310b981'/></svg>">
   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
 
+  <!-- HEADER NAVIGATION -->
   <header class="usda-header">
-    <a href="/" class="brand-mark">
-      <span class="brand-badge">DSC</span>
-      <span class="brand-title">USDA SAMPLING DIVISION</span>
+    <a href="/" class="brand-mark" aria-label="DSC Hemp Sampling Home">
+      <svg class="brand-svg" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+      <div>
+        <span class="brand-title">DSC HEMP SAMPLING</span>
+        <span class="brand-sub">USDA APPROVED SAMPLING AGENT</span>
+      </div>
     </a>
-    <nav class="usda-nav">
+
+    <nav class="usda-nav" aria-label="Main Navigation">
       <a href="/" class="nav-link">Home</a>
-      <a href="/services.html" class="nav-link">Sampling Services</a>
+      <a href="/services.html" class="nav-link">Services</a>
       <a href="/how-it-works.html" class="nav-link">How It Works</a>
-      <a href="/prepare.html" class="nav-link active">Prepare For Sampling</a>
+      <a href="/prepare.html" class="nav-link active">Prepare</a>
       <a href="/credentials.html" class="nav-link">Credentials</a>
       <a href="/coverage.html" class="nav-link">Coverage</a>
       <a href="/contact.html" class="nav-link">Contact</a>
     </nav>
-    <a href="/request-sampling.html" class="cta-button">Request Sampling</a>
+
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="/request-sampling.html" class="cta-button">Request Sampling ↗</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+    </div>
   </header>
 
   <main style="padding-top: 8rem;">
     <section class="section-wrapper">
       <div class="section-header">
-        <span class="hero-tag">FIELD READY CHECKLIST</span>
-        <h1 class="section-title">Producer Preparation Guidelines</h1>
+        <span class="hero-tag">FIELD PREPARATION</span>
+        <h1 class="section-title">Pre-Sampling Producer Checklist</h1>
+        <p style="color:var(--text-muted); max-width:680px; margin:1rem auto 0; font-size:1.05rem; line-height:1.7;">
+          Ensure your facility or field lot is prepared for efficient compliance collection prior to the agent's arrival.
+        </p>
       </div>
 
-      <div style="max-width:850px; margin:0 auto; background:var(--bg-card); border:1px solid var(--border-muted); border-radius:6px; padding:2.5rem;">
-        <h3 style="font-family:var(--font-heading); color:var(--accent-emerald); font-size:1.3rem; margin-bottom:1.5rem;">Pre-Appointment Checklist</h3>
+      <div class="cards-grid" style="grid-template-columns:1fr 1fr; gap:3rem;">
+        <!-- HAVE READY -->
+        <div style="background:var(--bg-card); border:1px solid var(--border-emerald); border-radius:8px; padding:2.5rem;">
+          <span class="hero-tag" style="font-size:0.75rem;">ON-SITE CHECKLIST</span>
+          <h2 style="font-family:var(--font-heading); font-size:1.4rem; color:#fff; margin:0.5rem 0 1.5rem;">Have Ready On-Site</h2>
+          
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:1rem; color:var(--text-muted); font-size:0.95rem;">
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-emerald); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Current Producer License & Registration Documentation</span>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-emerald); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Designated Lot Identification & Field Boundary Map</span>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-emerald); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Clear Physical Access to All Designated Field or Greenhouse Lots</span>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-emerald); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+              <span>Authorized Producer Representative Present During Sampling Visit</span>
+            </li>
+          </ul>
+        </div>
 
-        <ul style="list-style:none; padding:0;">
-          <li style="padding-left:2rem; position:relative; margin-bottom:1.5rem;">
-            <span style="position:absolute; left:0; color:var(--accent-emerald); font-weight:bold;">✔</span>
-            <strong>Document Readiness:</strong> Ensure state/USDA producer license certificates, lot field maps, and DEA lab submission forms are accessible on site.
-          </li>
-          <li style="padding-left:2rem; position:relative; margin-bottom:1.5rem;">
-            <span style="position:absolute; left:0; color:var(--accent-emerald); font-weight:bold;">✔</span>
-            <strong>Designated Representative:</strong> An authorized producer representative must be present to escort the sampling agent across designated lot boundaries.
-          </li>
-          <li style="padding-left:2rem; position:relative; margin-bottom:1.5rem;">
-            <span style="position:absolute; left:0; color:var(--accent-emerald); font-weight:bold;">✔</span>
-            <strong>Clear Field Access:</strong> Ensure field rows, greenhouse aisles, and facility entrances are free of hazardous obstructions and accessible during the scheduled window.
-          </li>
-          <li style="padding-left:2rem; position:relative;">
-            <span style="position:absolute; left:0; color:var(--accent-emerald); font-weight:bold;">✔</span>
-            <strong>Lot Demarcation:</strong> Verify that lot boundaries match submitted field maps and registered lot identifier numbers.
-          </li>
-        </ul>
+        <!-- CONFIRM WITH DSC BEFORE ARRIVAL -->
+        <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:8px; padding:2.5rem;">
+          <span class="hero-tag" style="font-size:0.75rem; color:var(--text-dim);">PRE-VISIT LOGISTICS</span>
+          <h2 style="font-family:var(--font-heading); font-size:1.4rem; color:#fff; margin:0.5rem 0 1.5rem;">Confirm Prior to Visit</h2>
+          
+          <ul style="list-style:none; display:flex; flex-direction:column; gap:1rem; color:var(--text-muted); font-size:0.95rem;">
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-gold); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span>Anticipated Harvest Schedule (Must Fall Within Regulatory Window)</span>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-gold); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span>Designated Analytical Testing Laboratory Selection</span>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-gold); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span>Total Number of Separate Lots Requiring Individual Sampling</span>
+            </li>
+            <li style="display:flex; gap:0.75rem; align-items:flex-start;">
+              <svg style="width:20px; height:20px; fill:var(--accent-gold); flex-shrink:0; margin-top:2px;" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+              <span>Site Entry Instructions, Gate Codes, or Biosecurity Protocols</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="usda-footer">
     <div class="footer-content">
-      <a href="https://dscuniverse.netlify.app" class="universe-gateway">
-        <span style="font-size:1.5rem; color:var(--accent-emerald);">🌌</span>
-        <div>
-          <h4 style="font-family:var(--font-heading); color:#fff;">DARK STAR UNIVERSE</h4>
-          <p style="font-size:0.85rem; color:var(--text-muted);">Return to the Central Ecosystem Hub</p>
+      <div class="independence-notice">
+        <strong>Regulatory Relationship Disclosure:</strong> Dark Star Consulting Group, LLC is an independent private business entity. Devin O'Rourke is a USDA-approved hemp sampling agent under the U.S. Domestic Hemp Production Program (7 CFR Part 990). Dark Star Consulting Group, LLC is not the U.S. Department of Agriculture.
+      </div>
+
+      <a href="https://dscuniverse.netlify.app" class="universe-gateway" aria-label="Return to Dark Star Universe Central Hub">
+        <svg style="width:24px; height:24px; fill:var(--accent-emerald);" viewBox="0 0 100 100">
+          <polygon points="50,5 64,36 98,36 70,57 81,91 50,70 19,91 30,57 2,36 36,36"/>
+        </svg>
+        <div style="text-align:left;">
+          <h4 style="font-family:var(--font-heading); color:#fff; font-size:0.95rem;">DARK STAR UNIVERSE</h4>
+          <p style="font-size:0.8rem; color:var(--text-muted);">Central Ecosystem Hub</p>
         </div>
       </a>
+
       <p style="font-size:0.85rem; color:var(--text-dim);">
-        © 2026 DSC USDA. Independent Sampling Division within the Dark Star Ecosystem.
+        © 2026 Dark Star Consulting Group, LLC. Sampling Agent ID: USDA_SA_0341. Member of Dark Star Ecosystem.
       </p>
     </div>
   </footer>

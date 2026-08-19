@@ -3,70 +3,100 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Sampling Division | DSC USDA</title>
-  <meta name="description" content="Direct contact channel for producer inquiries, scheduling coordination, and laboratory dispatch.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <title>Contact Sampling Desk | Dark Star Consulting Group</title>
+  <meta name="description" content="Contact Dark Star Consulting Group, LLC sampling operations desk regarding USDA hemp compliance sampling inquiries.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a0d14' stroke='%2310b981' stroke-width='6'/><path d='M50 25 L70 75 L30 75 Z' fill='%2310b981'/></svg>">
   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
 
+  <!-- HEADER NAVIGATION -->
   <header class="usda-header">
-    <a href="/" class="brand-mark">
-      <span class="brand-badge">DSC</span>
-      <span class="brand-title">USDA SAMPLING DIVISION</span>
+    <a href="/" class="brand-mark" aria-label="DSC Hemp Sampling Home">
+      <svg class="brand-svg" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+      <div>
+        <span class="brand-title">DSC HEMP SAMPLING</span>
+        <span class="brand-sub">USDA APPROVED SAMPLING AGENT</span>
+      </div>
     </a>
-    <nav class="usda-nav">
+
+    <nav class="usda-nav" aria-label="Main Navigation">
       <a href="/" class="nav-link">Home</a>
-      <a href="/services.html" class="nav-link">Sampling Services</a>
+      <a href="/services.html" class="nav-link">Services</a>
       <a href="/how-it-works.html" class="nav-link">How It Works</a>
-      <a href="/prepare.html" class="nav-link">Prepare For Sampling</a>
+      <a href="/prepare.html" class="nav-link">Prepare</a>
       <a href="/credentials.html" class="nav-link">Credentials</a>
       <a href="/coverage.html" class="nav-link">Coverage</a>
       <a href="/contact.html" class="nav-link active">Contact</a>
     </nav>
-    <a href="/request-sampling.html" class="cta-button">Request Sampling</a>
+
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="/request-sampling.html" class="cta-button">Request Sampling ↗</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+    </div>
   </header>
 
   <main style="padding-top: 8rem;">
     <section class="section-wrapper">
       <div class="section-header">
-        <span class="hero-tag">FIELD DESK COMMUNICATION</span>
-        <h1 class="section-title">Contact Field Sampling Operations</h1>
+        <span class="hero-tag">OPERATIONS DESK</span>
+        <h1 class="section-title">Sampling Operations Contact</h1>
+        <p style="color:var(--text-muted); max-width:640px; margin:1rem auto 0; font-size:1.05rem; line-height:1.7;">
+          Direct communication desk for commercial producers, licensing authorities, and analytical laboratories.
+        </p>
       </div>
 
-      <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem; max-width: 950px; margin: 0 auto;">
-        <div class="card" style="border-color: var(--accent-emerald);">
-          <h3 class="card-title">Sampling Appointment Request</h3>
-          <p class="card-text" style="margin-bottom: 1.5rem;">
-            Producers seeking to schedule official sampling appointments should use our formal service intake portal.
+      <div style="max-width:800px; margin:0 auto; background:var(--bg-card); border:1px solid var(--border-emerald); border-radius:8px; padding:3rem 2.5rem; display:flex; flex-direction:column; gap:2rem;">
+        <div>
+          <span class="hero-tag" style="font-size:0.75rem;">CERTIFICATE HOLDER</span>
+          <h2 style="font-family:var(--font-heading); font-size:1.6rem; color:#fff; margin:0.3rem 0 0.8rem;">Dark Star Consulting Group, LLC</h2>
+          <p style="color:var(--text-muted); font-size:0.98rem; line-height:1.7;">
+            Operating independent USDA-approved hemp sampling agent services from Charlotte / Mecklenburg County, North Carolina.
           </p>
-          <a href="/request-sampling.html" class="cta-button" style="width:100%; justify-content:center;">Open Sampling Request Form</a>
         </div>
 
-        <div class="card">
-          <h3 class="card-title">Direct Field Desk</h3>
-          <p class="card-text" style="margin-bottom:1rem;">
-            For urgent scheduling adjustments or chain-of-custody inquiries:
-          </p>
-          <p style="color:var(--accent-emerald); font-family:var(--font-heading); font-weight:600;">
-            dark.star.consulting.corp@gmail.com
-          </p>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:2rem; padding-top:1.5rem; border-top:1px solid var(--border-subtle);">
+          <div>
+            <span style="color:var(--text-dim); text-transform:uppercase; font-size:0.75rem; display:block; margin-bottom:0.4rem;">Direct Operations Email</span>
+            <a href="mailto:darkstarconsulting.dev@gmail.com" style="color:var(--accent-emerald); font-size:1.05rem; font-weight:700; text-decoration:none;">darkstarconsulting.dev@gmail.com</a>
+          </div>
+
+          <div>
+            <span style="color:var(--text-dim); text-transform:uppercase; font-size:0.75rem; display:block; margin-bottom:0.4rem;">Sampling Agent Identifier</span>
+            <span style="font-family:monospace; color:#fff; font-size:1.1rem; font-weight:700;">USDA_SA_0341</span>
+          </div>
+        </div>
+
+        <div style="text-align:center; margin-top:1rem;">
+          <a href="/request-sampling.html" class="cta-button" style="padding:0.9rem 2.2rem;">Submit Appointment Request Form ↗</a>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="usda-footer">
     <div class="footer-content">
-      <a href="https://dscuniverse.netlify.app" class="universe-gateway">
-        <span style="font-size:1.5rem; color:var(--accent-emerald);">🌌</span>
-        <div>
-          <h4 style="font-family:var(--font-heading); color:#fff;">DARK STAR UNIVERSE</h4>
-          <p style="font-size:0.85rem; color:var(--text-muted);">Return to the Central Ecosystem Hub</p>
+      <div class="independence-notice">
+        <strong>Regulatory Relationship Disclosure:</strong> Dark Star Consulting Group, LLC is an independent private business entity. Devin O'Rourke is a USDA-approved hemp sampling agent under the U.S. Domestic Hemp Production Program (7 CFR Part 990). Dark Star Consulting Group, LLC is not the U.S. Department of Agriculture.
+      </div>
+
+      <a href="https://dscuniverse.netlify.app" class="universe-gateway" aria-label="Return to Dark Star Universe Central Hub">
+        <svg style="width:24px; height:24px; fill:var(--accent-emerald);" viewBox="0 0 100 100">
+          <polygon points="50,5 64,36 98,36 70,57 81,91 50,70 19,91 30,57 2,36 36,36"/>
+        </svg>
+        <div style="text-align:left;">
+          <h4 style="font-family:var(--font-heading); color:#fff; font-size:0.95rem;">DARK STAR UNIVERSE</h4>
+          <p style="font-size:0.8rem; color:var(--text-muted);">Central Ecosystem Hub</p>
         </div>
       </a>
+
       <p style="font-size:0.85rem; color:var(--text-dim);">
-        © 2026 DSC USDA. Independent Sampling Division within the Dark Star Ecosystem.
+        © 2026 Dark Star Consulting Group, LLC. Sampling Agent ID: USDA_SA_0341. Member of Dark Star Ecosystem.
       </p>
     </div>
   </footer>

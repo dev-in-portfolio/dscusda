@@ -1,31 +1,54 @@
-// DSC USDA FIELD SERVICES ENGINE
+// ==========================================================================
+// DSC HEMP SAMPLING — CLIENT ENGINE
+// Mobile Navigation & Netlify Form Submission Handling
+// Zero localStorage persistence.
+// ==========================================================================
+
 document.addEventListener('DOMContentLoaded', () => {
-  initSamplingRequestForm();
+  initMobileNav();
+  initFormSuccessCheck();
 });
 
-function initSamplingRequestForm() {
-  const form = document.getElementById('sampling-request-form');
-  if (!form) return;
+// 1. MOBILE NAVIGATION TOGGLE
+function initMobileNav() {
+  const toggleBtn = document.querySelector('.mobile-menu-toggle');
+  const navMenu = document.querySelector('.usda-nav');
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const formData = new FormData(form);
-    const data = Object.fromEntries(formData.entries());
+  if (!toggleBtn || !navMenu) return;
 
-    const requests = JSON.parse(localStorage.getItem('dsc_usda_requests') || '[]');
-    requests.push({ ...data, request_id: 'REQ-' + Date.now(), timestamp: new Date().toISOString() });
-    localStorage.setItem('dsc_usda_requests', JSON.stringify(requests));
+  toggleBtn.addEventListener('click', () => {
+    const isActive = navMenu.classList.toggle('is-active');
+    toggleBtn.setAttribute('aria-expanded', isActive);
+  });
 
-    const statusBox = document.getElementById('request-status-output');
-    if (statusBox) {
-      statusBox.style.display = 'block';
-      statusBox.innerHTML = `
-        <div class="disclaimer-banner" style="background: rgba(42, 204, 116, 0.15); border-color: var(--accent-emerald);">
-          <h4 style="font-family:var(--font-heading); color:var(--accent-emerald); margin-bottom:0.5rem;">Sampling Request Submitted</h4>
-          <p>Your field sampling request has been logged under ID <strong>REQ-${Date.now()}</strong>. Please note: <strong>Submission does NOT constitute scheduling confirmation or acceptance.</strong> A field sampling agent will contact you within 24 hours to verify producer registration, field location, and schedule an official sampling window.</p>
+  // Close menu when clicking outside
+  document.addEventListener('click', (e) => {
+    if (!toggleBtn.contains(e.target) && !navMenu.contains(e.target)) {
+      navMenu.classList.remove('is-active');
+      toggleBtn.setAttribute('aria-expanded', 'false');
+    }
+  });
+}
+
+// 2. NETLIFY FORM SUCCESS NOTICE CHECK
+function initFormSuccessCheck() {
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('submitted') === 'true') {
+    const form = document.querySelector('form[name="sampling-request"]');
+    if (form) {
+      const banner = document.createElement('div');
+      banner.className = 'success-banner';
+      banner.innerHTML = `
+        <svg style="width:24px; height:24px; fill:currentColor;" viewBox="0 0 24 24">
+          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        <div>
+          <strong>Sampling Request Received</strong>
+          <p style="font-size:0.85rem; margin-top:0.2rem;">Thank you for contacting Dark Star Consulting Group. We will review your jurisdiction and scheduling request and respond to confirm availability and next steps.</p>
         </div>
       `;
+      form.parentNode.insertBefore(banner, form);
+      form.reset();
     }
-    form.reset();
-  });
+  }
 }

@@ -3,76 +3,132 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>How It Works | DSC USDA</title>
-  <meta name="description" content="Visual step-by-step sampling workflow from producer intake to laboratory handoff.">
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>">
+  <title>How Hemp Sampling Works | Dark Star Consulting Group</title>
+  <meta name="description" content="Step-by-step regulatory sampling workflow for USDA hemp producers operating under 7 CFR Part 990 with Dark Star Consulting Group, LLC.">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='45' fill='%230a0d14' stroke='%2310b981' stroke-width='6'/><path d='M50 25 L70 75 L30 75 Z' fill='%2310b981'/></svg>">
   <link rel="stylesheet" href="/src/style.css">
 </head>
 <body>
 
+  <!-- HEADER NAVIGATION -->
   <header class="usda-header">
-    <a href="/" class="brand-mark">
-      <span class="brand-badge">DSC</span>
-      <span class="brand-title">USDA SAMPLING DIVISION</span>
+    <a href="/" class="brand-mark" aria-label="DSC Hemp Sampling Home">
+      <svg class="brand-svg" viewBox="0 0 24 24">
+        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+      </svg>
+      <div>
+        <span class="brand-title">DSC HEMP SAMPLING</span>
+        <span class="brand-sub">USDA APPROVED SAMPLING AGENT</span>
+      </div>
     </a>
-    <nav class="usda-nav">
+
+    <nav class="usda-nav" aria-label="Main Navigation">
       <a href="/" class="nav-link">Home</a>
-      <a href="/services.html" class="nav-link">Sampling Services</a>
+      <a href="/services.html" class="nav-link">Services</a>
       <a href="/how-it-works.html" class="nav-link active">How It Works</a>
-      <a href="/prepare.html" class="nav-link">Prepare For Sampling</a>
+      <a href="/prepare.html" class="nav-link">Prepare</a>
       <a href="/credentials.html" class="nav-link">Credentials</a>
       <a href="/coverage.html" class="nav-link">Coverage</a>
       <a href="/contact.html" class="nav-link">Contact</a>
     </nav>
-    <a href="/request-sampling.html" class="cta-button">Request Sampling</a>
+
+    <div style="display:flex; align-items:center; gap:1rem;">
+      <a href="/request-sampling.html" class="cta-button">Request Sampling ↗</a>
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/></svg>
+      </button>
+    </div>
   </header>
 
   <main style="padding-top: 8rem;">
     <section class="section-wrapper">
       <div class="section-header">
-        <span class="hero-tag">OPERATIONAL PROCESS</span>
-        <h1 class="section-title">The Field Sampling Workflow</h1>
+        <span class="hero-tag">CLIENT JOURNEY</span>
+        <h1 class="section-title">Field Sampling Workflow</h1>
+        <p style="color:var(--text-muted); max-width:680px; margin:1rem auto 0; font-size:1.05rem; line-height:1.7;">
+          Transparent, step-by-step process for scheduling, performing, and documenting official hemp compliance sampling.
+        </p>
       </div>
 
-      <div class="workflow-container">
-        <div class="workflow-node">
-          <div class="node-number">01</div>
-          <h3 class="card-title">Producer Request</h3>
-          <p class="card-text">Producer submits lot details, harvest window, location, and producer license numbers via our secure intake portal.</p>
+      <div class="process-flow">
+        <div class="process-step-item">
+          <div class="step-num">01</div>
+          <div>
+            <h2 class="step-title">Submit Request</h2>
+            <p class="step-desc">Producer submits initial appointment inquiry specifying farm location, lot counts, and estimated harvest timeframe.</p>
+          </div>
         </div>
 
-        <div class="workflow-node">
-          <div class="node-number">02</div>
-          <h3 class="card-title">Verification & Schedule</h3>
-          <p class="card-text">Agent verifies active producer registration, confirms lot acreage/strain, and schedules an official sampling window.</p>
+        <div class="process-step-item">
+          <div class="step-num">02</div>
+          <div>
+            <h2 class="step-title">Jurisdiction Verification</h2>
+            <p class="step-desc">DSC verifies producer licensing program, applicable sampling rules, lot definitions, and regulatory pre-harvest window.</p>
+          </div>
         </div>
 
-        <div class="workflow-node">
-          <div class="node-number">03</div>
-          <h3 class="card-title">Field Sampling</h3>
-          <p class="card-text">Sampling agent arrives on site, inspects lot boundaries, collects representative floral cuts, and records GPS coordinates.</p>
+        <div class="process-step-item">
+          <div class="step-num">03</div>
+          <div>
+            <h2 class="step-title">Schedule Visit</h2>
+            <p class="step-desc">Confirm field visit date, time, site access instructions, and pre-sampling preparation checklist.</p>
+          </div>
         </div>
 
-        <div class="workflow-node">
-          <div class="node-number">04</div>
-          <h3 class="card-title">Chain of Custody & Lab Handoff</h3>
-          <p class="card-text">Sample is sealed in tamper-evident security bags, documented with Chain of Custody forms, and dispatched to the designated testing lab.</p>
+        <div class="process-step-item">
+          <div class="step-num">04</div>
+          <div>
+            <h2 class="step-title">Field Sampling</h2>
+            <p class="step-desc">USDA-approved sampling agent collects representative flowering-top samples for each designated lot under 7 CFR Part 990 guidance.</p>
+          </div>
+        </div>
+
+        <div class="process-step-item">
+          <div class="step-num">05</div>
+          <div>
+            <h2 class="step-title">Sample Documentation</h2>
+            <p class="step-desc">Samples are placed in official paper sample bags, identified with lot tracking numbers, sealed, and documented with chain-of-custody forms.</p>
+          </div>
+        </div>
+
+        <div class="process-step-item">
+          <div class="step-num">06</div>
+          <div>
+            <h2 class="step-title">Laboratory Dispatch</h2>
+            <p class="step-desc">Sample is dispatched to the analytical testing laboratory permitted or required under the producer's licensing program.</p>
+          </div>
+        </div>
+
+        <div class="process-step-item">
+          <div class="step-num">07</div>
+          <div>
+            <h2 class="step-title">Regulatory Reporting</h2>
+            <p class="step-desc">Testing results and compliance reporting are processed through the applicable laboratory and regulatory authority workflow.</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="usda-footer">
     <div class="footer-content">
-      <a href="https://dscuniverse.netlify.app" class="universe-gateway">
-        <span style="font-size:1.5rem; color:var(--accent-emerald);">🌌</span>
-        <div>
-          <h4 style="font-family:var(--font-heading); color:#fff;">DARK STAR UNIVERSE</h4>
-          <p style="font-size:0.85rem; color:var(--text-muted);">Return to the Central Ecosystem Hub</p>
+      <div class="independence-notice">
+        <strong>Regulatory Relationship Disclosure:</strong> Dark Star Consulting Group, LLC is an independent private business entity. Devin O'Rourke is a USDA-approved hemp sampling agent under the U.S. Domestic Hemp Production Program (7 CFR Part 990). Dark Star Consulting Group, LLC is not the U.S. Department of Agriculture.
+      </div>
+
+      <a href="https://dscuniverse.netlify.app" class="universe-gateway" aria-label="Return to Dark Star Universe Central Hub">
+        <svg style="width:24px; height:24px; fill:var(--accent-emerald);" viewBox="0 0 100 100">
+          <polygon points="50,5 64,36 98,36 70,57 81,91 50,70 19,91 30,57 2,36 36,36"/>
+        </svg>
+        <div style="text-align:left;">
+          <h4 style="font-family:var(--font-heading); color:#fff; font-size:0.95rem;">DARK STAR UNIVERSE</h4>
+          <p style="font-size:0.8rem; color:var(--text-muted);">Central Ecosystem Hub</p>
         </div>
       </a>
+
       <p style="font-size:0.85rem; color:var(--text-dim);">
-        © 2026 DSC USDA. Independent Sampling Division within the Dark Star Ecosystem.
+        © 2026 Dark Star Consulting Group, LLC. Sampling Agent ID: USDA_SA_0341. Member of Dark Star Ecosystem.
       </p>
     </div>
   </footer>
